@@ -126,7 +126,7 @@ def play(board)
     counter += 1
   end
    if over?(board)
-     break
+     puts "Game is over"
    end
   input = gets
 end
