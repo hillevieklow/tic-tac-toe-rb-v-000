@@ -127,6 +127,6 @@ def play(board)
   end
    if over?(board)
      break
-
+   end
   input = gets
 end
