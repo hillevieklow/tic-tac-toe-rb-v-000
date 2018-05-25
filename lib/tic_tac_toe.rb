@@ -120,13 +120,12 @@ def turn(board)
 end
 
 def play(board)
-  counter = 0
-  while counter < 9
+  until over?(board)
+    current_player(board)
     turn(board)
-    counter += 1
   end
-   if over?(board)
-     puts "Game is over"
-   end
-  input = gets
+  if won?(board)
+    puts "Congratulations #{winner(board)}"
+  else
+    puts "Tie!"
 end
