@@ -128,4 +128,5 @@ def play(board)
     puts "Congratulations #{winner(board)}"
   else
     puts "Tie!"
+  end
 end
