@@ -1,9 +1,3 @@
-# Helper Method
-def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
-end
-
-# Define your WIN_COMBINATIONS constant
 
 WIN_COMBINATIONS = [
   [0,1,2],
@@ -37,6 +31,9 @@ def won?(board)
   end
 end
 
+def position_taken?(board, index)
+  !(board[index].nil? || board[index] == " ")
+end
 
 def full?(board)
   if board.detect{ |i| i == " " || i == nil }
