@@ -125,4 +125,8 @@ def play(board)
     turn(board)
     counter += 1
   end
+   if over?(board)
+     break
+
+  input = gets
 end
